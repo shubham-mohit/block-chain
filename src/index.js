@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 mongoose.connect('mongodb+srv://sourabhamohite2812:wXzbwlWssiEAjJL1@cluster0.m7awpol.mongodb.net/shubham-22', {useNewUrlParser: true})
-.then(()=> console.log('MondoDb is connected') )
+.then(()=> console.log('MongoDb is connected') )
 .catch((err)=> {console.log(err.message)})
 
 app.use('/', route)
